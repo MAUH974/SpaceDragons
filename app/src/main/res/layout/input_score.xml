@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/DELETE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="delete all scores" />
+
+    <TextView
+        android:id="@+id/TEXTVIEWNAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingRight="50dp"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/EDITTEXTNAME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TEXTVIEWSCORE"
+        android:layout_toRightOf="@+id/TEXTVIEWNAME" />
+
+    <TextView
+        android:id="@+id/TEXTVIEWSCORE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TEXTVIEWNAME"
+        android:layout_below="@+id/TEXTVIEWNAME"
+        android:layout_marginTop="30dp"
+        android:paddingRight="100dp"
+        android:text="Score" />
+
+    <TextView
+        android:id="@+id/TEXTVIEWSCORENUMBER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TEXTVIEWSCORE"
+        android:layout_toRightOf="@+id/TEXTVIEWSCORE" />
+
+    <TextView
+        android:id="@+id/TEXTVIEWLATITUDE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TEXTVIEWNAME"
+        android:layout_below="@+id/TEXTVIEWSCORE"
+        android:layout_marginTop="30dp"
+        android:paddingRight="100dp"
+        android:text="Latitude" />
+
+    <TextView
+        android:id="@+id/TEXTVIEWLATITUDENUMBER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TEXTVIEWSCORENUMBER"
+        android:layout_alignTop="@+id/TEXTVIEWLATITUDE"
+        android:layout_below="@+id/TEXTVIEWSCORE"
+        android:layout_toRightOf="@+id/TEXTVIEWLATITUDE" />
+
+    <TextView
+        android:id="@+id/TEXTVIEWLONGITUDE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TEXTVIEWNAME"
+        android:layout_below="@+id/TEXTVIEWLATITUDE"
+        android:layout_marginTop="30dp"
+        android:paddingRight="100dp"
+        android:text="Longitude" />
+
+    <TextView
+        android:id="@+id/TEXTVIEWLONGITUDENUMBER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TEXTVIEWSCORENUMBER"
+        android:layout_alignTop="@+id/TEXTVIEWLONGITUDE"
+        android:layout_below="@+id/TEXTVIEWLATITUDENUMBER"
+        android:layout_toRightOf="@+id/TEXTVIEWLONGITUDE" />
+
+    <Button
+        android:id="@+id/SAVE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Save your score" />
+
+</RelativeLayout>
